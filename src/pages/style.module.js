@@ -4,6 +4,10 @@ export const ContainerMain = styled.main`
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
 
   .div-calc {
     width: 350px;
@@ -12,6 +16,10 @@ export const ContainerMain = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 1px 1px 2px 4px #92939423;
+    border-radius: 12px;
+    border: none;
+    padding: 16px;
 
     h1 {
       font-family: Arial, Helvetica, sans-serif;
@@ -41,5 +49,18 @@ export const ContainerMain = styled.main`
         color: #9322fc;
       }
     }
+  }
+  .div-display {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 1px 2px 4px #92939423;
+    border-radius: 12px;
+    border: none;
+    padding: 16px;
+    background-color: blueviolet;
   }
 `;

@@ -1,4 +1,5 @@
 import React from "react";
+import { levels } from "../helpers/imc";
 import { ContainerMain } from "./style.module";
 
 const MainImc = () => {
@@ -13,6 +14,11 @@ const MainImc = () => {
         />
         <input className="input-calc" type="text" placeholder="Peso: ex: 70" />
         <button>Calcular</button>
+      </div>
+      <div className="div-display">
+        {levels.map((item, key) => (
+          <div key={key}>{item.title}</div>
+        ))}
       </div>
     </ContainerMain>
   );
